@@ -26,7 +26,7 @@ export default function CreateProduct() {
 
     formData.append('title', title)
     formData.append('description', description)
-    formData.appen('image', image)
+    formData.append('image', image)
 
     await axios.post(`http://localhost:8000/api/products`, formData).then(({data}) => {
       Swal.fire({
